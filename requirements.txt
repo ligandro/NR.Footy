@@ -1,16 +1,11 @@
 beautifulsoup4==4.12.3
 cmasher==1.6.3
 highlight_text==0.2
-matplotlib==3.8.2
-matplotlib==3.8.0
 matplotlib==3.8.3
 mplsoccer==1.2.4
 numpy==1.24.3
 pandas==2.2.2
-Pillow==10.1.0
-Pillow==10.0.1
 Pillow==10.3.0
-PyYAML==6.0.1
 PyYAML==6.0.1
 Requests==2.32.3
 scipy==1.11.3
