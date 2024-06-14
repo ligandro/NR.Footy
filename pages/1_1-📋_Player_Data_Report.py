@@ -603,9 +603,9 @@ if sec_pos == 'Central Striker':
                                                 kwargs_compare={'facecolor': '#d80499', 'alpha': 0.6})
         radar_poly, radar_poly2, vertices1, vertices2 = radar_output
         range_labels = radar.draw_range_labels(ax=ax, fontsize=15,color='white',
-                                                font="STXihei",weight="bold")
+                                                font="monospace",weight="bold")
         param_labels = radar.draw_param_labels(ax=ax, fontsize=15,color='white',
-                                            font="STXihei",weight="bold")
+                                            font="monospace",weight="bold")
 
         ax.scatter(vertices1[:, 0], vertices1[:, 1],
                                     c="#00f2c1", edgecolors='#00f2c1', marker='o', s=30, zorder=2)
@@ -706,7 +706,7 @@ if sec_pos == 'Central Striker':
             bar = ax.barh(i, percentile_rank, height=0.3, alpha=0.7, color=color,edgecolor ="white",linewidth =0.8 ,zorder=1)
             ax.text(
                 105, bar[0].get_y() + bar[0].get_height() / 2, f'{metric_value:.2f}', va='center', ha='left',
-                font='STXihei', size=15, color='white'
+                font='Monospace', size=15, color='white'
             )
 
         # ax.axvline(50, linestyle='--', label='50th Percentile Rank',color='white')
@@ -717,7 +717,7 @@ if sec_pos == 'Central Striker':
 
 
         # Set the new labels for the y-axis ticks
-        ax.set_yticklabels(new_labels,font='Tw Cen MT', color='white') 
+        ax.set_yticklabels(new_labels,font='Monospace', color='white') 
 
         ax.set_ylim(len(metrics) - 0.5, -0.5)
         ax.set_yticks(range(len(metrics)))
@@ -725,12 +725,12 @@ if sec_pos == 'Central Striker':
         max_percentile_rank = max([max(percentile_ranks[metric]) for metric in metrics])
         ax.set_xlim(0, max_percentile_rank + 10)
 
-        ax.set_xlabel('Percentile Ranks', color='white',fontname = "Tw Cen MT",size=20)
-        # ax.set_ylabel('Metrics', color='white',fontname = "Tw Cen MT",size=20)
-        plt.xticks(fontname = "Tw Cen MT",color="white",size=12)
+        ax.set_xlabel('Percentile Ranks', color='white',fontname = "Monospace",size=20)
+        # ax.set_ylabel('Metrics', color='white',fontname = "Monospace",size=20)
+        plt.xticks(fontname = "Monospace",color="white",size=12)
         ax.set_xticks([0, 25, 50,75, 100])
 
-        plt.yticks(fontname = "Tw Cen MT",color="white",size=15)
+        plt.yticks(fontname = "monospace",color="white",size=15)
 
 
         ax.legend().remove()
@@ -752,7 +752,7 @@ if sec_pos == 'Central Striker':
         for i, box in enumerate(top_boxes):
             ax.add_patch(box)
             ax.text(
-                i * 24 + 15, -0.8, f'{texts[i]}',font="Tw Cen MT", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
+                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
             )
 
         plt.subplots_adjust(left=0.2)
@@ -803,7 +803,7 @@ if sec_pos == 'Central Striker':
         fig_text(
             x = 0.55, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="white",
             bbox=dict(boxstyle='round', facecolor='none', edgecolor='#4A9BD4', linewidth=2)
@@ -816,7 +816,7 @@ if sec_pos == 'Central Striker':
         fig_text(
             x = 0.15, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="#4A9BD4"
         )
@@ -828,7 +828,7 @@ if sec_pos == 'Central Striker':
         fig_text(
             x = 0.775, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="#4A9BD4"
         )
@@ -1064,9 +1064,9 @@ elif sec_pos == 'Winger':
                                                 kwargs_compare={'facecolor': '#d80499', 'alpha': 0.6})
         radar_poly, radar_poly2, vertices1, vertices2 = radar_output
         range_labels = radar.draw_range_labels(ax=ax, fontsize=15,color='white',
-                                                font="STXihei",weight="bold")
+                                                font="Monospace",weight="bold")
         param_labels = radar.draw_param_labels(ax=ax, fontsize=15,color='white',
-                                            font="STXihei",weight="bold")
+                                            font="Monospace",weight="bold")
 
         ax.scatter(vertices1[:, 0], vertices1[:, 1],
                                     c="#00f2c1", edgecolors='#00f2c1', marker='o', s=30, zorder=2)
@@ -1167,7 +1167,7 @@ elif sec_pos == 'Winger':
             bar = ax.barh(i, percentile_rank, height=0.3, alpha=0.7, color=color,edgecolor ="white",linewidth =0.8 ,zorder=1)
             ax.text(
                 105, bar[0].get_y() + bar[0].get_height() / 2, f'{metric_value:.2f}', va='center', ha='left',
-                font='STXihei', size=15, color='white'
+                font='Monospace', size=15, color='white'
             )
 
         # ax.axvline(50, linestyle='--', label='50th Percentile Rank',color='white')
@@ -1178,7 +1178,7 @@ elif sec_pos == 'Winger':
 
 
         # Set the new labels for the y-axis ticks
-        ax.set_yticklabels(new_labels,font='Tw Cen MT', color='white') 
+        ax.set_yticklabels(new_labels,font='Monospace', color='white') 
 
         ax.set_ylim(len(metrics) - 0.5, -0.5)
         ax.set_yticks(range(len(metrics)))
@@ -1186,12 +1186,12 @@ elif sec_pos == 'Winger':
         max_percentile_rank = max([max(percentile_ranks[metric]) for metric in metrics])
         ax.set_xlim(0, max_percentile_rank + 10)
 
-        ax.set_xlabel('Percentile Ranks', color='white',fontname = "Tw Cen MT",size=20)
-        # ax.set_ylabel('Metrics', color='white',fontname = "Tw Cen MT",size=20)
-        plt.xticks(fontname = "Tw Cen MT",color="white",size=12)
+        ax.set_xlabel('Percentile Ranks', color='white',fontname = "Monospace",size=20)
+        # ax.set_ylabel('Metrics', color='white',fontname = "Monospace",size=20)
+        plt.xticks(fontname = "Monospace",color="white",size=12)
         ax.set_xticks([0, 25, 50,75, 100])
 
-        plt.yticks(fontname = "Tw Cen MT",color="white",size=15)
+        plt.yticks(fontname = "Monospace",color="white",size=15)
 
 
         ax.legend().remove()
@@ -1213,7 +1213,7 @@ elif sec_pos == 'Winger':
         for i, box in enumerate(top_boxes):
             ax.add_patch(box)
             ax.text(
-                i * 24 + 15, -0.8, f'{texts[i]}',font="Tw Cen MT", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
+                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
             )
 
         plt.subplots_adjust(left=0.2)
@@ -1264,7 +1264,7 @@ elif sec_pos == 'Winger':
         fig_text(
             x = 0.55, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="white",
             bbox=dict(boxstyle='round', facecolor='none', edgecolor='#4A9BD4', linewidth=2)
@@ -1277,7 +1277,7 @@ elif sec_pos == 'Winger':
         fig_text(
             x = 0.15, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="#4A9BD4"
         )
@@ -1289,7 +1289,7 @@ elif sec_pos == 'Winger':
         fig_text(
             x = 0.775, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="#4A9BD4"
         )
@@ -1530,9 +1530,9 @@ elif sec_pos == 'Attacking Mid':
                                                 kwargs_compare={'facecolor': '#d80499', 'alpha': 0.6})
         radar_poly, radar_poly2, vertices1, vertices2 = radar_output
         range_labels = radar.draw_range_labels(ax=ax, fontsize=15,color='white',
-                                                font="STXihei",weight="bold")
+                                                font="Monospace",weight="bold")
         param_labels = radar.draw_param_labels(ax=ax, fontsize=15,color='white',
-                                            font="STXihei",weight="bold")
+                                            font="Monospace",weight="bold")
 
         ax.scatter(vertices1[:, 0], vertices1[:, 1],
                                     c="#00f2c1", edgecolors='#00f2c1', marker='o', s=30, zorder=2)
@@ -1634,7 +1634,7 @@ elif sec_pos == 'Attacking Mid':
             bar = ax.barh(i, percentile_rank, height=0.3, alpha=0.7, color=color,edgecolor ="white",linewidth =0.8 ,zorder=1)
             ax.text(
                 105, bar[0].get_y() + bar[0].get_height() / 2, f'{metric_value:.2f}', va='center', ha='left',
-                font='STXihei', size=15, color='white'
+                font='Monospace', size=15, color='white'
             )
 
         # ax.axvline(50, linestyle='--', label='50th Percentile Rank',color='white')
@@ -1645,7 +1645,7 @@ elif sec_pos == 'Attacking Mid':
 
 
         # Set the new labels for the y-axis ticks
-        ax.set_yticklabels(new_labels,font='Tw Cen MT', color='white') 
+        ax.set_yticklabels(new_labels,font='Monospace', color='white') 
 
         ax.set_ylim(len(metrics) - 0.5, -0.5)
         ax.set_yticks(range(len(metrics)))
@@ -1653,12 +1653,12 @@ elif sec_pos == 'Attacking Mid':
         max_percentile_rank = max([max(percentile_ranks[metric]) for metric in metrics])
         ax.set_xlim(0, max_percentile_rank + 10)
 
-        ax.set_xlabel('Percentile Ranks', color='white',fontname = "Tw Cen MT",size=20)
-        # ax.set_ylabel('Metrics', color='white',fontname = "Tw Cen MT",size=20)
-        plt.xticks(fontname = "Tw Cen MT",color="white",size=12)
+        ax.set_xlabel('Percentile Ranks', color='white',fontname = "Monospace",size=20)
+        # ax.set_ylabel('Metrics', color='white',fontname = "Monospace",size=20)
+        plt.xticks(fontname = "Monospace",color="white",size=12)
         ax.set_xticks([0, 25, 50,75, 100])
 
-        plt.yticks(fontname = "Tw Cen MT",color="white",size=15)
+        plt.yticks(fontname = "Monospace",color="white",size=15)
 
 
         ax.legend().remove()
@@ -1680,7 +1680,7 @@ elif sec_pos == 'Attacking Mid':
         for i, box in enumerate(top_boxes):
             ax.add_patch(box)
             ax.text(
-                i * 24 + 15, -0.8, f'{texts[i]}',font="Tw Cen MT", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
+                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
             )
 
         plt.subplots_adjust(left=0.2)
@@ -1731,7 +1731,7 @@ elif sec_pos == 'Attacking Mid':
         fig_text(
             x = 0.55, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="white",
             bbox=dict(boxstyle='round', facecolor='none', edgecolor='#4A9BD4', linewidth=2)
@@ -1744,7 +1744,7 @@ elif sec_pos == 'Attacking Mid':
         fig_text(
             x = 0.15, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="#4A9BD4"
         )
@@ -1756,7 +1756,7 @@ elif sec_pos == 'Attacking Mid':
         fig_text(
             x = 0.775, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="#4A9BD4"
         )
@@ -2009,9 +2009,9 @@ elif sec_pos == 'Central Mid':
                                                 kwargs_compare={'facecolor': '#d80499', 'alpha': 0.6})
         radar_poly, radar_poly2, vertices1, vertices2 = radar_output
         range_labels = radar.draw_range_labels(ax=ax, fontsize=15,color='white',
-                                                font="STXihei",weight="bold")
+                                                font="Monospace",weight="bold")
         param_labels = radar.draw_param_labels(ax=ax, fontsize=15,color='white',
-                                            font="STXihei",weight="bold")
+                                            font="Monospace",weight="bold")
 
         ax.scatter(vertices1[:, 0], vertices1[:, 1],
                                     c="#00f2c1", edgecolors='#00f2c1', marker='o', s=30, zorder=2)
@@ -2113,7 +2113,7 @@ elif sec_pos == 'Central Mid':
             bar = ax.barh(i, percentile_rank, height=0.3, alpha=0.7, color=color,edgecolor ="white",linewidth =0.8 ,zorder=1)
             ax.text(
                 105, bar[0].get_y() + bar[0].get_height() / 2, f'{metric_value:.2f}', va='center', ha='left',
-                font='STXihei', size=15, color='white'
+                font='Monospace', size=15, color='white'
             )
 
         # ax.axvline(50, linestyle='--', label='50th Percentile Rank',color='white')
@@ -2124,7 +2124,7 @@ elif sec_pos == 'Central Mid':
 
 
         # Set the new labels for the y-axis ticks
-        ax.set_yticklabels(new_labels,font='Tw Cen MT', color='white') 
+        ax.set_yticklabels(new_labels,font='Monospace', color='white') 
 
         ax.set_ylim(len(metrics) - 0.5, -0.5)
         ax.set_yticks(range(len(metrics)))
@@ -2132,12 +2132,12 @@ elif sec_pos == 'Central Mid':
         max_percentile_rank = max([max(percentile_ranks[metric]) for metric in metrics])
         ax.set_xlim(0, max_percentile_rank + 10)
 
-        ax.set_xlabel('Percentile Ranks', color='white',fontname = "Tw Cen MT",size=20)
-        # ax.set_ylabel('Metrics', color='white',fontname = "Tw Cen MT",size=20)
-        plt.xticks(fontname = "Tw Cen MT",color="white",size=12)
+        ax.set_xlabel('Percentile Ranks', color='white',fontname = "Monospace",size=20)
+        # ax.set_ylabel('Metrics', color='white',fontname = "Monospace",size=20)
+        plt.xticks(fontname = "Monospace",color="white",size=12)
         ax.set_xticks([0, 25, 50,75, 100])
 
-        plt.yticks(fontname = "Tw Cen MT",color="white",size=15)
+        plt.yticks(fontname = "Monospace",color="white",size=15)
 
 
         ax.legend().remove()
@@ -2159,7 +2159,7 @@ elif sec_pos == 'Central Mid':
         for i, box in enumerate(top_boxes):
             ax.add_patch(box)
             ax.text(
-                i * 24 + 15, -0.8, f'{texts[i]}',font="Tw Cen MT", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
+                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
             )
 
         plt.subplots_adjust(left=0.2)
@@ -2210,7 +2210,7 @@ elif sec_pos == 'Central Mid':
         fig_text(
             x = 0.55, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="white",
             bbox=dict(boxstyle='round', facecolor='none', edgecolor='#4A9BD4', linewidth=2)
@@ -2223,7 +2223,7 @@ elif sec_pos == 'Central Mid':
         fig_text(
             x = 0.15, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="#4A9BD4"
         )
@@ -2235,7 +2235,7 @@ elif sec_pos == 'Central Mid':
         fig_text(
             x = 0.775, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="#4A9BD4"
         )
@@ -2492,9 +2492,9 @@ elif sec_pos == 'Defensive Midfielder':
                                                 kwargs_compare={'facecolor': '#d80499', 'alpha': 0.6})
         radar_poly, radar_poly2, vertices1, vertices2 = radar_output
         range_labels = radar.draw_range_labels(ax=ax, fontsize=15,color='white',
-                                                font="STXihei",weight="bold")
+                                                font="Monospace",weight="bold")
         param_labels = radar.draw_param_labels(ax=ax, fontsize=15,color='white',
-                                            font="STXihei",weight="bold")
+                                            font="Monospace",weight="bold")
 
         ax.scatter(vertices1[:, 0], vertices1[:, 1],
                                     c="#00f2c1", edgecolors='#00f2c1', marker='o', s=30, zorder=2)
@@ -2596,7 +2596,7 @@ elif sec_pos == 'Defensive Midfielder':
             bar = ax.barh(i, percentile_rank, height=0.3, alpha=0.7, color=color,edgecolor ="white",linewidth =0.8 ,zorder=1)
             ax.text(
                 105, bar[0].get_y() + bar[0].get_height() / 2, f'{metric_value:.2f}', va='center', ha='left',
-                font='STXihei', size=15, color='white'
+                font='Monospace', size=15, color='white'
             )
 
         # ax.axvline(50, linestyle='--', label='50th Percentile Rank',color='white')
@@ -2607,7 +2607,7 @@ elif sec_pos == 'Defensive Midfielder':
 
 
         # Set the new labels for the y-axis ticks
-        ax.set_yticklabels(new_labels,font='Tw Cen MT', color='white') 
+        ax.set_yticklabels(new_labels,font='Monospace', color='white') 
 
         ax.set_ylim(len(metrics) - 0.5, -0.5)
         ax.set_yticks(range(len(metrics)))
@@ -2615,12 +2615,12 @@ elif sec_pos == 'Defensive Midfielder':
         max_percentile_rank = max([max(percentile_ranks[metric]) for metric in metrics])
         ax.set_xlim(0, max_percentile_rank + 10)
 
-        ax.set_xlabel('Percentile Ranks', color='white',fontname = "Tw Cen MT",size=20)
-        # ax.set_ylabel('Metrics', color='white',fontname = "Tw Cen MT",size=20)
-        plt.xticks(fontname = "Tw Cen MT",color="white",size=12)
+        ax.set_xlabel('Percentile Ranks', color='white',fontname = "Monospace",size=20)
+        # ax.set_ylabel('Metrics', color='white',fontname = "Monospace",size=20)
+        plt.xticks(fontname = "Monospace",color="white",size=12)
         ax.set_xticks([0, 25, 50,75, 100])
 
-        plt.yticks(fontname = "Tw Cen MT",color="white",size=15)
+        plt.yticks(fontname = "Monospace",color="white",size=15)
 
 
         ax.legend().remove()
@@ -2642,7 +2642,7 @@ elif sec_pos == 'Defensive Midfielder':
         for i, box in enumerate(top_boxes):
             ax.add_patch(box)
             ax.text(
-                i * 24 + 15, -0.8, f'{texts[i]}',font="Tw Cen MT", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
+                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
             )
 
         plt.subplots_adjust(left=0.2)
@@ -2693,7 +2693,7 @@ elif sec_pos == 'Defensive Midfielder':
         fig_text(
             x = 0.55, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="white",
             bbox=dict(boxstyle='round', facecolor='none', edgecolor='#4A9BD4', linewidth=2)
@@ -2706,7 +2706,7 @@ elif sec_pos == 'Defensive Midfielder':
         fig_text(
             x = 0.15, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="#4A9BD4"
         )
@@ -2718,7 +2718,7 @@ elif sec_pos == 'Defensive Midfielder':
         fig_text(
             x = 0.775, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="#4A9BD4"
         )
@@ -2954,9 +2954,9 @@ elif sec_pos == 'Center Back':
                                                 kwargs_compare={'facecolor': '#d80499', 'alpha': 0.6})
         radar_poly, radar_poly2, vertices1, vertices2 = radar_output
         range_labels = radar.draw_range_labels(ax=ax, fontsize=15,color='white',
-                                                font="STXihei",weight="bold")
+                                                font="Monospace",weight="bold")
         param_labels = radar.draw_param_labels(ax=ax, fontsize=15,color='white',
-                                            font="STXihei",weight="bold")
+                                            font="Monospace",weight="bold")
 
         ax.scatter(vertices1[:, 0], vertices1[:, 1],
                                     c="#00f2c1", edgecolors='#00f2c1', marker='o', s=30, zorder=2)
@@ -3059,7 +3059,7 @@ elif sec_pos == 'Center Back':
             bar = ax.barh(i, percentile_rank, height=0.3, alpha=0.7, color=color,edgecolor ="white",linewidth =0.8 ,zorder=1)
             ax.text(
                 105, bar[0].get_y() + bar[0].get_height() / 2, f'{metric_value:.2f}', va='center', ha='left',
-                font='STXihei', size=15, color='white'
+                font='Monospace', size=15, color='white'
             )
 
         # ax.axvline(50, linestyle='--', label='50th Percentile Rank',color='white')
@@ -3070,7 +3070,7 @@ elif sec_pos == 'Center Back':
 
 
         # Set the new labels for the y-axis ticks
-        ax.set_yticklabels(new_labels,font='Tw Cen MT', color='white') 
+        ax.set_yticklabels(new_labels,font='Monospace', color='white') 
 
         ax.set_ylim(len(metrics) - 0.5, -0.5)
         ax.set_yticks(range(len(metrics)))
@@ -3078,12 +3078,12 @@ elif sec_pos == 'Center Back':
         max_percentile_rank = max([max(percentile_ranks[metric]) for metric in metrics])
         ax.set_xlim(0, max_percentile_rank + 10)
 
-        ax.set_xlabel('Percentile Ranks', color='white',fontname = "Tw Cen MT",size=20)
-        # ax.set_ylabel('Metrics', color='white',fontname = "Tw Cen MT",size=20)
-        plt.xticks(fontname = "Tw Cen MT",color="white",size=12)
+        ax.set_xlabel('Percentile Ranks', color='white',fontname = "Monospace",size=20)
+        # ax.set_ylabel('Metrics', color='white',fontname = "Monospace",size=20)
+        plt.xticks(fontname = "Monospace",color="white",size=12)
         ax.set_xticks([0, 25, 50,75, 100])
 
-        plt.yticks(fontname = "Tw Cen MT",color="white",size=15)
+        plt.yticks(fontname = "Monospace",color="white",size=15)
 
 
         ax.legend().remove()
@@ -3105,7 +3105,7 @@ elif sec_pos == 'Center Back':
         for i, box in enumerate(top_boxes):
             ax.add_patch(box)
             ax.text(
-                i * 24 + 15, -0.8, f'{texts[i]}',font="Tw Cen MT", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
+                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
             )
 
         plt.subplots_adjust(left=0.2)
@@ -3156,7 +3156,7 @@ elif sec_pos == 'Center Back':
         fig_text(
             x = 0.55, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="white",
             bbox=dict(boxstyle='round', facecolor='none', edgecolor='#4A9BD4', linewidth=2)
@@ -3169,7 +3169,7 @@ elif sec_pos == 'Center Back':
         fig_text(
             x = 0.15, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="#4A9BD4"
         )
@@ -3181,7 +3181,7 @@ elif sec_pos == 'Center Back':
         fig_text(
             x = 0.775, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="#4A9BD4"
         )
@@ -3433,9 +3433,9 @@ elif sec_pos == 'Full Back':
                                                 kwargs_compare={'facecolor': '#d80499', 'alpha': 0.6})
         radar_poly, radar_poly2, vertices1, vertices2 = radar_output
         range_labels = radar.draw_range_labels(ax=ax, fontsize=15,color='white',
-                                                font="STXihei",weight="bold")
+                                                font="Monospace",weight="bold")
         param_labels = radar.draw_param_labels(ax=ax, fontsize=15,color='white',
-                                            font="STXihei",weight="bold")
+                                            font="Monospace",weight="bold")
 
         ax.scatter(vertices1[:, 0], vertices1[:, 1],
                                     c="#00f2c1", edgecolors='#00f2c1', marker='o', s=30, zorder=2)
@@ -3539,7 +3539,7 @@ elif sec_pos == 'Full Back':
             bar = ax.barh(i, percentile_rank, height=0.3, alpha=0.7, color=color,edgecolor ="white",linewidth =0.8 ,zorder=1)
             ax.text(
                 105, bar[0].get_y() + bar[0].get_height() / 2, f'{metric_value:.2f}', va='center', ha='left',
-                font='STXihei', size=15, color='white'
+                font='Monospace', size=15, color='white'
             )
 
         # ax.axvline(50, linestyle='--', label='50th Percentile Rank',color='white')
@@ -3550,7 +3550,7 @@ elif sec_pos == 'Full Back':
 
 
         # Set the new labels for the y-axis ticks
-        ax.set_yticklabels(new_labels,font='Tw Cen MT', color='white') 
+        ax.set_yticklabels(new_labels,font='Monospace', color='white') 
 
         ax.set_ylim(len(metrics) - 0.5, -0.5)
         ax.set_yticks(range(len(metrics)))
@@ -3558,12 +3558,12 @@ elif sec_pos == 'Full Back':
         max_percentile_rank = max([max(percentile_ranks[metric]) for metric in metrics])
         ax.set_xlim(0, max_percentile_rank + 10)
 
-        ax.set_xlabel('Percentile Ranks', color='white',fontname = "Tw Cen MT",size=20)
-        # ax.set_ylabel('Metrics', color='white',fontname = "Tw Cen MT",size=20)
-        plt.xticks(fontname = "Tw Cen MT",color="white",size=12)
+        ax.set_xlabel('Percentile Ranks', color='white',fontname = "Monospace",size=20)
+        # ax.set_ylabel('Metrics', color='white',fontname = "Monospace",size=20)
+        plt.xticks(fontname = "Monospace",color="white",size=12)
         ax.set_xticks([0, 25, 50,75, 100])
 
-        plt.yticks(fontname = "Tw Cen MT",color="white",size=15)
+        plt.yticks(fontname = "Monospace",color="white",size=15)
 
 
         ax.legend().remove()
@@ -3585,7 +3585,7 @@ elif sec_pos == 'Full Back':
         for i, box in enumerate(top_boxes):
             ax.add_patch(box)
             ax.text(
-                i * 24 + 15, -0.8, f'{texts[i]}',font="Tw Cen MT", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
+                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
             )
 
         plt.subplots_adjust(left=0.2)
@@ -3636,7 +3636,7 @@ elif sec_pos == 'Full Back':
         fig_text(
             x = 0.55, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="white",
             bbox=dict(boxstyle='round', facecolor='none', edgecolor='#4A9BD4', linewidth=2)
@@ -3649,7 +3649,7 @@ elif sec_pos == 'Full Back':
         fig_text(
             x = 0.15, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="#4A9BD4"
         )
@@ -3661,7 +3661,7 @@ elif sec_pos == 'Full Back':
         fig_text(
             x = 0.775, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="#4A9BD4"
         )
@@ -3885,9 +3885,9 @@ elif sec_pos == 'Goalkeeper':
                                                 kwargs_compare={'facecolor': '#d80499', 'alpha': 0.6})
         radar_poly, radar_poly2, vertices1, vertices2 = radar_output
         range_labels = radar.draw_range_labels(ax=ax, fontsize=15,color='white',
-                                                font="STXihei",weight="bold")
+                                                font="Monospace",weight="bold")
         param_labels = radar.draw_param_labels(ax=ax, fontsize=15,color='white',
-                                            font="STXihei",weight="bold")
+                                            font="Monospace",weight="bold")
 
         ax.scatter(vertices1[:, 0], vertices1[:, 1],
                                     c="#00f2c1", edgecolors='#00f2c1', marker='o', s=30, zorder=2)
@@ -3990,7 +3990,7 @@ elif sec_pos == 'Goalkeeper':
             bar = ax.barh(i, percentile_rank, height=0.3, alpha=0.7, color=color,edgecolor ="white",linewidth =0.8 ,zorder=1)
             ax.text(
                 105, bar[0].get_y() + bar[0].get_height() / 2, f'{metric_value:.2f}', va='center', ha='left',
-                font='STXihei', size=15, color='white'
+                font='Monospace', size=15, color='white'
             )
 
         # ax.axvline(50, linestyle='--', label='50th Percentile Rank',color='white')
@@ -4001,7 +4001,7 @@ elif sec_pos == 'Goalkeeper':
 
 
         # Set the new labels for the y-axis ticks
-        ax.set_yticklabels(new_labels,font='Tw Cen MT', color='white') 
+        ax.set_yticklabels(new_labels,font='Monospace', color='white') 
 
         ax.set_ylim(len(metrics) - 0.5, -0.5)
         ax.set_yticks(range(len(metrics)))
@@ -4009,12 +4009,12 @@ elif sec_pos == 'Goalkeeper':
         max_percentile_rank = max([max(percentile_ranks[metric]) for metric in metrics])
         ax.set_xlim(0, max_percentile_rank + 10)
 
-        ax.set_xlabel('Percentile Ranks', color='white',fontname = "Tw Cen MT",size=20)
-        # ax.set_ylabel('Metrics', color='white',fontname = "Tw Cen MT",size=20)
-        plt.xticks(fontname = "Tw Cen MT",color="white",size=12)
+        ax.set_xlabel('Percentile Ranks', color='white',fontname = "Monospace",size=20)
+        # ax.set_ylabel('Metrics', color='white',fontname = "Monospace",size=20)
+        plt.xticks(fontname = "Monospace",color="white",size=12)
         ax.set_xticks([0, 25, 50,75, 100])
 
-        plt.yticks(fontname = "Tw Cen MT",color="white",size=15)
+        plt.yticks(fontname = "Monospace",color="white",size=15)
 
 
         ax.legend().remove()
@@ -4036,7 +4036,7 @@ elif sec_pos == 'Goalkeeper':
         for i, box in enumerate(top_boxes):
             ax.add_patch(box)
             ax.text(
-                i * 24 + 15, -0.8, f'{texts[i]}',font="Tw Cen MT", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
+                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
             )
 
         plt.subplots_adjust(left=0.2)
@@ -4087,7 +4087,7 @@ elif sec_pos == 'Goalkeeper':
         fig_text(
             x = 0.55, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="white",
             bbox=dict(boxstyle='round', facecolor='none', edgecolor='#4A9BD4', linewidth=2)
@@ -4100,7 +4100,7 @@ elif sec_pos == 'Goalkeeper':
         fig_text(
             x = 0.15, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="#4A9BD4"
         )
@@ -4112,7 +4112,7 @@ elif sec_pos == 'Goalkeeper':
         fig_text(
             x = 0.775, y = 1, 
             s = str_text,
-            fontname ="STXihei",
+            fontname ="Monospace",
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="#4A9BD4"
         )
