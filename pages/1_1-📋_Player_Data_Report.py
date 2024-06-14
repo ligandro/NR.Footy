@@ -810,31 +810,6 @@ if sec_pos == 'Central Striker':
         )
 
 
-        #Heading
-        str_text = f'''--------------------------------------------------'''
-
-        fig_text(
-            x = 0.15, y = 1, 
-            s = str_text,
-            fontname ="Monospace",
-            va = 'bottom', ha = 'left',
-            fontsize = 17,  weight = 'bold',color="#4A9BD4"
-        )
-
-
-        #Heading
-        str_text = f'''-----------------------------------------------'''
-
-        fig_text(
-            x = 0.775, y = 1, 
-            s = str_text,
-            fontname ="Monospace",
-            va = 'bottom', ha = 'left',
-            fontsize = 17,  weight = 'bold',color="#4A9BD4"
-        )
-
-
-
         Attacking_Mid_score = z_scores_df[z_scores_df['Player']==x]["Striker_Score"].values[0]
         attack_df = z_scores_df.sort_values(by='Striker_Score', ascending=False).reset_index(drop=True)
         Attacking_Mid_rank = attack_df.index[attack_df['Player'] == x].values[0] +1 
@@ -1270,29 +1245,6 @@ elif sec_pos == 'Winger':
             bbox=dict(boxstyle='round', facecolor='none', edgecolor='#4A9BD4', linewidth=2)
         )
 
-
-        #Heading
-        str_text = f'''--------------------------------------------------'''
-
-        fig_text(
-            x = 0.15, y = 1, 
-            s = str_text,
-            fontname ="Monospace",
-            va = 'bottom', ha = 'left',
-            fontsize = 17,  weight = 'bold',color="#4A9BD4"
-        )
-
-
-        #Heading
-        str_text = f'''-----------------------------------------------'''
-
-        fig_text(
-            x = 0.775, y = 1, 
-            s = str_text,
-            fontname ="Monospace",
-            va = 'bottom', ha = 'left',
-            fontsize = 17,  weight = 'bold',color="#4A9BD4"
-        )
 
 
 
@@ -1736,32 +1688,6 @@ elif sec_pos == 'Attacking Mid':
             fontsize = 17,  weight = 'bold',color="white",
             bbox=dict(boxstyle='round', facecolor='none', edgecolor='#4A9BD4', linewidth=2)
         )
-
-
-        #Heading
-        str_text = f'''--------------------------------------------------'''
-
-        fig_text(
-            x = 0.15, y = 1, 
-            s = str_text,
-            fontname ="Monospace",
-            va = 'bottom', ha = 'left',
-            fontsize = 17,  weight = 'bold',color="#4A9BD4"
-        )
-
-
-        #Heading
-        str_text = f'''-----------------------------------------------'''
-
-        fig_text(
-            x = 0.775, y = 1, 
-            s = str_text,
-            fontname ="Monospace",
-            va = 'bottom', ha = 'left',
-            fontsize = 17,  weight = 'bold',color="#4A9BD4"
-        )
-
-
 
         Attacking_Mid_score = z_scores_df[z_scores_df['Player']==x]["Attacking_Mid"].values[0]
         attack_df = z_scores_df.sort_values(by='Attacking_Mid', ascending=False).reset_index(drop=True)
@@ -2214,30 +2140,6 @@ elif sec_pos == 'Central Mid':
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="white",
             bbox=dict(boxstyle='round', facecolor='none', edgecolor='#4A9BD4', linewidth=2)
-        )
-
-
-        #Heading
-        str_text = f'''--------------------------------------------------'''
-
-        fig_text(
-            x = 0.15, y = 1, 
-            s = str_text,
-            fontname ="Monospace",
-            va = 'bottom', ha = 'left',
-            fontsize = 17,  weight = 'bold',color="#4A9BD4"
-        )
-
-
-        #Heading
-        str_text = f'''-----------------------------------------------'''
-
-        fig_text(
-            x = 0.775, y = 1, 
-            s = str_text,
-            fontname ="Monospace",
-            va = 'bottom', ha = 'left',
-            fontsize = 17,  weight = 'bold',color="#4A9BD4"
         )
 
 
@@ -2699,32 +2601,6 @@ elif sec_pos == 'Defensive Midfielder':
             bbox=dict(boxstyle='round', facecolor='none', edgecolor='#4A9BD4', linewidth=2)
         )
 
-
-        #Heading
-        str_text = f'''--------------------------------------------------'''
-
-        fig_text(
-            x = 0.15, y = 1, 
-            s = str_text,
-            fontname ="Monospace",
-            va = 'bottom', ha = 'left',
-            fontsize = 17,  weight = 'bold',color="#4A9BD4"
-        )
-
-
-        #Heading
-        str_text = f'''-----------------------------------------------'''
-
-        fig_text(
-            x = 0.775, y = 1, 
-            s = str_text,
-            fontname ="Monospace",
-            va = 'bottom', ha = 'left',
-            fontsize = 17,  weight = 'bold',color="#4A9BD4"
-        )
-
-
-
         Attacking_Mid_score = z_scores_df[z_scores_df['Player']==x]["Defensive_Mid"].values[0]
         attack_df = z_scores_df.sort_values(by='Defensive_Mid', ascending=False).reset_index(drop=True)
         Attacking_Mid_rank = attack_df.index[attack_df['Player'] == x].values[0] +1 
@@ -3161,32 +3037,6 @@ elif sec_pos == 'Center Back':
             fontsize = 17,  weight = 'bold',color="white",
             bbox=dict(boxstyle='round', facecolor='none', edgecolor='#4A9BD4', linewidth=2)
         )
-
-
-        #Heading
-        str_text = f'''--------------------------------------------------'''
-
-        fig_text(
-            x = 0.15, y = 1, 
-            s = str_text,
-            fontname ="Monospace",
-            va = 'bottom', ha = 'left',
-            fontsize = 17,  weight = 'bold',color="#4A9BD4"
-        )
-
-
-        #Heading
-        str_text = f'''-----------------------------------------------'''
-
-        fig_text(
-            x = 0.775, y = 1, 
-            s = str_text,
-            fontname ="Monospace",
-            va = 'bottom', ha = 'left',
-            fontsize = 17,  weight = 'bold',color="#4A9BD4"
-        )
-
-
 
         Attacking_Mid_score = z_scores_df[z_scores_df['Player']==x]["Centre_Back"].values[0]
         attack_df = z_scores_df.sort_values(by='Centre_Back', ascending=False).reset_index(drop=True)
@@ -3642,32 +3492,6 @@ elif sec_pos == 'Full Back':
             bbox=dict(boxstyle='round', facecolor='none', edgecolor='#4A9BD4', linewidth=2)
         )
 
-
-        #Heading
-        str_text = f'''--------------------------------------------------'''
-
-        fig_text(
-            x = 0.15, y = 1, 
-            s = str_text,
-            fontname ="Monospace",
-            va = 'bottom', ha = 'left',
-            fontsize = 17,  weight = 'bold',color="#4A9BD4"
-        )
-
-
-        #Heading
-        str_text = f'''-----------------------------------------------'''
-
-        fig_text(
-            x = 0.775, y = 1, 
-            s = str_text,
-            fontname ="Monospace",
-            va = 'bottom', ha = 'left',
-            fontsize = 17,  weight = 'bold',color="#4A9BD4"
-        )
-
-
-
         Attacking_Mid_score = z_scores_df[z_scores_df['Player']==x]["Full_Back"].values[0]
         attack_df = z_scores_df.sort_values(by='Full_Back', ascending=False).reset_index(drop=True)
         Attacking_Mid_rank = attack_df.index[attack_df['Player'] == x].values[0] +1 
@@ -4091,30 +3915,6 @@ elif sec_pos == 'Goalkeeper':
             va = 'bottom', ha = 'left',
             fontsize = 17,  weight = 'bold',color="white",
             bbox=dict(boxstyle='round', facecolor='none', edgecolor='#4A9BD4', linewidth=2)
-        )
-
-
-        #Heading
-        str_text = f'''--------------------------------------------------'''
-
-        fig_text(
-            x = 0.15, y = 1, 
-            s = str_text,
-            fontname ="Monospace",
-            va = 'bottom', ha = 'left',
-            fontsize = 17,  weight = 'bold',color="#4A9BD4"
-        )
-
-
-        #Heading
-        str_text = f'''-----------------------------------------------'''
-
-        fig_text(
-            x = 0.775, y = 1, 
-            s = str_text,
-            fontname ="Monospace",
-            va = 'bottom', ha = 'left',
-            fontsize = 17,  weight = 'bold',color="#4A9BD4"
         )
 
 
