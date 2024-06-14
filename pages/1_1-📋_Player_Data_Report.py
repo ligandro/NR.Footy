@@ -752,7 +752,7 @@ if sec_pos == 'Central Striker':
         for i, box in enumerate(top_boxes):
             ax.add_patch(box)
             ax.text(
-                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
+                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=22
             )
 
         plt.subplots_adjust(left=0.2)
@@ -801,7 +801,7 @@ if sec_pos == 'Central Striker':
         str_text = f'''Player Data Report'''
 
         fig_text(
-            x = 0.55, y = 0.9, 
+            x = 0.55, y = 0.97, 
             s = str_text,
             fontname ="Monospace",
             va = 'bottom', ha = 'left',
@@ -1188,7 +1188,7 @@ elif sec_pos == 'Winger':
         for i, box in enumerate(top_boxes):
             ax.add_patch(box)
             ax.text(
-                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
+                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=22
             )
 
         plt.subplots_adjust(left=0.2)
@@ -1632,7 +1632,7 @@ elif sec_pos == 'Attacking Mid':
         for i, box in enumerate(top_boxes):
             ax.add_patch(box)
             ax.text(
-                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
+                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=22
             )
 
         plt.subplots_adjust(left=0.2)
@@ -1681,7 +1681,7 @@ elif sec_pos == 'Attacking Mid':
         str_text = f'''Player Data Report'''
 
         fig_text(
-            x = 0.55, y = 0. 97, 
+            x = 0.55, y = 0.97, 
             s = str_text,
             fontname ="Monospace",
             va = 'bottom', ha = 'left',
@@ -2085,7 +2085,7 @@ elif sec_pos == 'Central Mid':
         for i, box in enumerate(top_boxes):
             ax.add_patch(box)
             ax.text(
-                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
+                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=22
             )
 
         plt.subplots_adjust(left=0.2)
@@ -2134,7 +2134,7 @@ elif sec_pos == 'Central Mid':
         str_text = f'''Player Data Report'''
 
         fig_text(
-            x = 0.55, y = 0. 97, 
+            x = 0.55, y = 0.97, 
             s = str_text,
             fontname ="Monospace",
             va = 'bottom', ha = 'left',
@@ -2544,7 +2544,7 @@ elif sec_pos == 'Defensive Midfielder':
         for i, box in enumerate(top_boxes):
             ax.add_patch(box)
             ax.text(
-                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
+                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=22
             )
 
         plt.subplots_adjust(left=0.2)
@@ -2593,7 +2593,7 @@ elif sec_pos == 'Defensive Midfielder':
         str_text = f'''Player Data Report'''
 
         fig_text(
-            x = 0.55, y = 0. 97, 
+            x = 0.55, y = 0.97, 
             s = str_text,
             fontname ="Monospace",
             va = 'bottom', ha = 'left',
@@ -2981,7 +2981,7 @@ elif sec_pos == 'Center Back':
         for i, box in enumerate(top_boxes):
             ax.add_patch(box)
             ax.text(
-                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
+                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=22
             )
 
         plt.subplots_adjust(left=0.2)
@@ -3030,7 +3030,7 @@ elif sec_pos == 'Center Back':
         str_text = f'''Player Data Report'''
 
         fig_text(
-            x = 0.55, y = 0. 97, 
+            x = 0.55, y = 0.97, 
             s = str_text,
             fontname ="Monospace",
             va = 'bottom', ha = 'left',
@@ -3435,7 +3435,7 @@ elif sec_pos == 'Full Back':
         for i, box in enumerate(top_boxes):
             ax.add_patch(box)
             ax.text(
-                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
+                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=22
             )
 
         plt.subplots_adjust(left=0.2)
@@ -3484,7 +3484,7 @@ elif sec_pos == 'Full Back':
         str_text = f'''Player Data Report'''
 
         fig_text(
-            x = 0.55, y = 0. 97, 
+            x = 0.55, y = 0.97, 
             s = str_text,
             fontname ="Monospace",
             va = 'bottom', ha = 'left',
@@ -3860,7 +3860,7 @@ elif sec_pos == 'Goalkeeper':
         for i, box in enumerate(top_boxes):
             ax.add_patch(box)
             ax.text(
-                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=25
+                i * 24 + 15, -0.8, f'{texts[i]}',font="Monospace", va='center', ha='center', color=colors[i], fontweight='bold', fontsize=22
             )
 
         plt.subplots_adjust(left=0.2)
