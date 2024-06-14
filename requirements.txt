@@ -11,3 +11,4 @@ Requests==2.32.3
 scipy==1.11.3
 selenium==4.21.0
 streamlit==1.27.1
+openpyxl
