@@ -789,7 +789,7 @@ if sec_pos == 'Central Striker':
         else : 
             fn = 22
 
-        im1 = plt.imread(r"C:\Users\lolen\OneDrive\Documents\Coding\Neurotactic Essentials\Images\Neuro.png")
+        im1 = plt.imread(r"data/images/pizza.png")
         ax_image = add_image( im1, fig, left=1.02, bottom=0.982, width=0.13, height=0.13 )   # these values might differ when you are plotting
 
 
@@ -1250,7 +1250,7 @@ elif sec_pos == 'Winger':
         else : 
             fn = 22
 
-        im1 = plt.imread(r"C:\Users\lolen\OneDrive\Documents\Coding\Neurotactic Essentials\Images\Neuro.png")
+        im1 = plt.imread(r"data/images/pizza.png")
         ax_image = add_image( im1, fig, left=1.02, bottom=0.982, width=0.13, height=0.13 )   # these values might differ when you are plotting
 
 
@@ -1717,7 +1717,7 @@ elif sec_pos == 'Attacking Mid':
         else : 
             fn = 22
 
-        im1 = plt.imread(r"C:\Users\lolen\OneDrive\Documents\Coding\Neurotactic Essentials\Images\Neuro.png")
+        im1 = plt.imread(r"data/images/pizza.png")
         ax_image = add_image( im1, fig, left=1.02, bottom=0.982, width=0.13, height=0.13 )   # these values might differ when you are plotting
 
 
@@ -2196,7 +2196,7 @@ elif sec_pos == 'Central Mid':
         else : 
             fn = 22
 
-        im1 = plt.imread(r"C:\Users\lolen\OneDrive\Documents\Coding\Neurotactic Essentials\Images\Neuro.png")
+        im1 = plt.imread(r"data/images/pizza.png")
         ax_image = add_image( im1, fig, left=1.02, bottom=0.982, width=0.13, height=0.13 )   # these values might differ when you are plotting
 
 
@@ -2679,7 +2679,7 @@ elif sec_pos == 'Defensive Midfielder':
         else : 
             fn = 22
 
-        im1 = plt.imread(r"C:\Users\lolen\OneDrive\Documents\Coding\Neurotactic Essentials\Images\Neuro.png")
+        im1 = plt.imread(r"data/images/pizza.png")
         ax_image = add_image( im1, fig, left=1.02, bottom=0.982, width=0.13, height=0.13 )   # these values might differ when you are plotting
 
 
@@ -3142,7 +3142,7 @@ elif sec_pos == 'Center Back':
         else : 
             fn = 22
 
-        im1 = plt.imread(r"C:\Users\lolen\OneDrive\Documents\Coding\Neurotactic Essentials\Images\Neuro.png")
+        im1 = plt.imread(r"data/images/pizza.png")
         ax_image = add_image( im1, fig, left=1.02, bottom=0.982, width=0.13, height=0.13 )   # these values might differ when you are plotting
 
 
@@ -3622,7 +3622,7 @@ elif sec_pos == 'Full Back':
         else : 
             fn = 22
 
-        im1 = plt.imread(r"C:\Users\lolen\OneDrive\Documents\Coding\Neurotactic Essentials\Images\Neuro.png")
+        im1 = plt.imread(r"data/images/pizza.png")
         ax_image = add_image( im1, fig, left=1.02, bottom=0.982, width=0.13, height=0.13 )   # these values might differ when you are plotting
 
 
@@ -4073,7 +4073,7 @@ elif sec_pos == 'Goalkeeper':
         else : 
             fn = 22
 
-        im1 = plt.imread(r"C:\Users\lolen\OneDrive\Documents\Coding\Neurotactic Essentials\Images\Neuro.png")
+        im1 = plt.imread(r"data/images/pizza.png")
         ax_image = add_image( im1, fig, left=1.02, bottom=0.982, width=0.13, height=0.13 )   # these values might differ when you are plotting
 
 
