@@ -1237,7 +1237,7 @@ elif sec_pos == 'Winger':
         str_text = f'''Player Data Report'''
 
         fig_text(
-            x = 0.55, y = 0.9, 
+            x = 0.55, y = 0.97, 
             s = str_text,
             fontname ="Monospace",
             va = 'bottom', ha = 'left',
@@ -1681,7 +1681,7 @@ elif sec_pos == 'Attacking Mid':
         str_text = f'''Player Data Report'''
 
         fig_text(
-            x = 0.55, y = 0.9, 
+            x = 0.55, y = 0. 97, 
             s = str_text,
             fontname ="Monospace",
             va = 'bottom', ha = 'left',
@@ -2134,7 +2134,7 @@ elif sec_pos == 'Central Mid':
         str_text = f'''Player Data Report'''
 
         fig_text(
-            x = 0.55, y = 0.9, 
+            x = 0.55, y = 0. 97, 
             s = str_text,
             fontname ="Monospace",
             va = 'bottom', ha = 'left',
@@ -2593,7 +2593,7 @@ elif sec_pos == 'Defensive Midfielder':
         str_text = f'''Player Data Report'''
 
         fig_text(
-            x = 0.55, y = 0.9, 
+            x = 0.55, y = 0. 97, 
             s = str_text,
             fontname ="Monospace",
             va = 'bottom', ha = 'left',
@@ -3030,7 +3030,7 @@ elif sec_pos == 'Center Back':
         str_text = f'''Player Data Report'''
 
         fig_text(
-            x = 0.55, y = 0.9, 
+            x = 0.55, y = 0. 97, 
             s = str_text,
             fontname ="Monospace",
             va = 'bottom', ha = 'left',
@@ -3484,7 +3484,7 @@ elif sec_pos == 'Full Back':
         str_text = f'''Player Data Report'''
 
         fig_text(
-            x = 0.55, y = 0.9, 
+            x = 0.55, y = 0. 97, 
             s = str_text,
             fontname ="Monospace",
             va = 'bottom', ha = 'left',
@@ -3909,7 +3909,7 @@ elif sec_pos == 'Goalkeeper':
         str_text = f'''Player Data Report'''
 
         fig_text(
-            x = 0.55, y = 0.9, 
+            x = 0.55, y = 0.97,
             s = str_text,
             fontname ="Monospace",
             va = 'bottom', ha = 'left',
